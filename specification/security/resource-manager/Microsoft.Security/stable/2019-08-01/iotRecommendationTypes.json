@@ -172,7 +172,10 @@
           "example": "Medium",
           "description": "The severity of the recommendation",
           "enum": [
-            "Informational",
+            "Unknown",
+            "NotApplicable",
+            "Healthy",
+            "OffByPolicy",
             "Low",
             "Medium",
             "High"
@@ -182,7 +185,16 @@
             "modelAsString": true,
             "values": [
               {
-                "value": "Informational"
+                "value": "Unknown"
+              },
+              {
+                "value": "NotApplicable"
+              },
+              {
+                "value": "Healthy"
+              },
+              {
+                "value": "OffByPolicy"
               },
               {
                 "value": "Low"

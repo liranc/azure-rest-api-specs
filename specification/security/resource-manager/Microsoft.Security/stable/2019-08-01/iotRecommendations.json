@@ -111,7 +111,7 @@
         "tags": [
           "IoT Security Recommendations"
         ],
-        "operationId": "IotAlerts_Get",
+        "operationId": "IotRecommendations_Get",
         "description": "Get IoT recommendation",
         "parameters": [
           {
@@ -152,7 +152,7 @@
     }
   },
   "definitions": {
-    "IotAlertList": {
+    "IotRecommendationList": {
       "description": "List of IoT recommendations",
       "type": "object",
       "properties": {

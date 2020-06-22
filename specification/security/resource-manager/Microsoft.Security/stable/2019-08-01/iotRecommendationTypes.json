@@ -135,12 +135,12 @@
           "type": "array",
           "description": "List data",
           "items": {
-            "$ref": "#/definitions/IotRecommndationType"
+            "$ref": "#/definitions/IotRecommendationType"
           }
         }
       }
     },
-    "IotRecommendationTypeType": {
+    "IotRecommendationType": {
       "type": "object",
       "description": "IoT recommendation type.",
       "properties": {
@@ -213,6 +213,12 @@
           "type": "string",
           "example": "Microsoft",
           "description": "The name of the vendor that raised the recommendation"
+        },
+        "category": {
+          "readOnly": true,
+          "type": "string",
+          "example": "Communication between device and IoT Hub is not optimized",
+          "description": "The name of the recommendation's category "
         },
         "remediationSteps": {
           "readOnly": true,
